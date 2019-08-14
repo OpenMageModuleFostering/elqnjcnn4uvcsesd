@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>ELQNjCNN4uvCsESd</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="www.opensource.org/licenses/gpl-license.php">GNU General Public License</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension allows user to check product images on order review section of magento checkout.</summary>
+    <description>This extension enables user to check product images on the checkout process order review section.</description>
+    <notes>Magento compitible extension.</notes>
+    <authors><author><name>Ravi patel</name><user>rvpatel</user><email>ravipatelb07272@gmail.com</email></author></authors>
+    <date>2014-06-13</date>
+    <time>06:28:12</time>
+    <contents><target name="magecommunity"><dir name="Parin"><dir name="CheckoutReviewProductImage"><dir name="Block"><file name="About.php" hash="8f029ed5e06ea8b91d31650d29fdfa70"/></dir><dir name="Helper"><file name="Data.php" hash="bf2f9eba53fe98c51d105f08e92d701f"/></dir><dir name="etc"><file name="config.xml" hash="6ab064f190d14f4f33b6e2d2bfa7dd31"/><file name="system.xml" hash="9fbb513efba46a4d9bb2aad1fb747c59"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="checkoutreviewproductimage"><dir name="checkout"><dir name="onepage"><dir name="review"><file name="item.phtml" hash="424553c39a787ee73e78fbc3145302c0"/></dir></dir></dir></dir></dir><dir name="layout"><file name="checkoutreviewproductimage.xml" hash="8f48b0124585b5957bc3e786c23fa6d0"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Parin_CheckoutReviewProductImage.xml" hash="db7a62be9754fb28dad96a68ccde2be0"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Parin_CheckoutReviewProductImage>
+            <version>0.1.0</version>
+        </Parin_CheckoutReviewProductImage>
+    </modules>
+    <frontend>
+        <routers>
+            <checkoutreviewproductimage>
+                <use>standard</use>
+                <args>
+                    <module>Parin_CheckoutReviewProductImage</module>
+                    <frontName>checkoutreviewproductimage</frontName>
+                </args>
+            </checkoutreviewproductimage>
+        </routers>
+        <layout>
+            <updates>
+                <checkoutreviewproductimage>
+                    <file>checkoutreviewproductimage.xml</file>
+                </checkoutreviewproductimage>
+            </updates>
+        </layout>
+    </frontend>
+    
+    <global>        
+        <resources>
+            <checkoutreviewproductimage_setup>
+                <setup>
+                    <module>Parin_CheckoutReviewProductImage</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </checkoutreviewproductimage_setup>
+            <checkoutreviewproductimage_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </checkoutreviewproductimage_write>
+            <checkoutreviewproductimage_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </checkoutreviewproductimage_read>
+        </resources>
+        <blocks>
+        	
+            <checkoutreviewproductimage>
+                <class>Parin_CheckoutReviewProductImage_Block</class>
+            </checkoutreviewproductimage>
+        </blocks>
+        <helpers>
+            <checkoutreviewproductimage>
+                <class>Parin_CheckoutReviewProductImage_Helper</class>
+            </checkoutreviewproductimage>
+        </helpers>
+		
+    </global>
+	
+    <default>
+        <checkoutreviewproductimage>
+            <general>
+                <enabled>1</enabled>				
+            </general>
+        </checkoutreviewproductimage>
+    </default>
+	<adminhtml>       
+		<acl>
+			<resources>
+				<admin>
+					<children>
+						<system>
+							<children>
+								<config>
+									<children>
+										<checkoutreviewproductimage translate="title" module="checkoutreviewproductimage">
+											<title>Checkout Review Image</title>
+										</checkoutreviewproductimage>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>		
+    </adminhtml>
+</config>
